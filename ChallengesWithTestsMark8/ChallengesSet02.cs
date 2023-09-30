@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -41,10 +42,8 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            /*Watch video for it*/
-            if (!numbers.Any()) return 0;
-            if (numbers.Any() == null) return 0;
-            /* if (numbers.Count() == 0) return 0.0;*/
+
+            if (numbers == null || !numbers.Any()) return 0;
 
             double max = numbers.Max();
             double min = numbers.Min();
@@ -95,19 +94,31 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOdd(List<int> numbers)
         {
-            if (numbers == null) return false;
-            var result = true;
-            foreach (var item in numbers)
+            if (numbers == null || !numbers.Any()) return false;
+
+            int count = 0;
+            for (int i = 0;i < numbers.Count;i++)
             {
-                if (item % 2 != 0) result = true;
-                result = false;
+                count += numbers[i];
             }
-            return (result);
+
+            if (count % 2 != 0) return true;
+            return false;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+
+            long counter = 0; 
+
+            for (var i = 0; i < number; i++)
+            {
+                if (i % 2 != 0 && i > 0)
+                {
+                    counter++;
+                }
+            }
+            return counter;
         }
     }
 }
