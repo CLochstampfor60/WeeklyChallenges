@@ -9,21 +9,19 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            if (Char.IsLetter(c)) return true;
+            return false;
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            
-            /*If val.Length is Even, return true, else return false*/
- /*           bool result = false;
-
-            for (int i = 0; i < vals.Length; i++)
+            /*The count of elements is even or odd...not the sum of all numbers is even or odd*/
+            if (vals.Length % 2 == 0)
             {
-               if ( )
+                return true;
+            }
+            else { return false; }
 
-            }*/
-            throw new NotImplementedException();
         }
 
         public bool IsNumberEven(int number)
@@ -43,20 +41,22 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            throw new NotImplementedException();
+            /*Watch video for it*/
+            if (!numbers.Any()) return 0;
+            if (numbers.Any() == null) return 0;
+            /* if (numbers.Count() == 0) return 0.0;*/
+
+            double max = numbers.Max();
+            double min = numbers.Min();
+
+            return max + min;
+
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            if (str1 == null || str2 == null)
-                throw new ArgumentNullException(nameof(str1));
-
-            if (str2 == null) throw new ArgumentNullException(nameof(str2));
-
-    /*        int length = 0;*/
            
-            
-            if (str1.Length > str2.Length)
+            if (str1.Length < str2.Length)
             {
                
                 return str1.Length;
