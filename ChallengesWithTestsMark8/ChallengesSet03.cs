@@ -10,7 +10,9 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            throw new NotImplementedException();
+            if(vals.Contains(false)) return true;
+            else return false;
+      
 
         }
 
@@ -39,52 +41,56 @@ namespace ChallengesWithTestsMark8
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-            /*     for (int i = 0; i < password.Length; i++)
-                 {
-                     foreach(char c in password)
-                     {
-                         if (c == ' ') return false;
-                         if (c % 2 == 0) return true;
 
-                     }
+            bool anyUpper = password.Any(char.IsUpper);
+            bool anyLower = password.Any(char.IsLower);
+            bool anyNumber = password.Any(char.IsNumber);
 
-                 }*/
-            throw new NotImplementedException();
+          if (anyUpper && anyLower && anyNumber) return true;
+            return false;
+
         }
 
         public char GetFirstLetterOfString(string val)
         {
-            
-            return val.ToCharArray()[0];
+
+            /*return val.ToCharArray()[0];*/
+            return val[0];
                
         }
 
         public char GetLastLetterOfString(string val)
         {
-            throw new NotImplementedException();
+           return val[val.Length - 1];
         }
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            throw new NotImplementedException();
+      
+            return divisor == 0 ? 0 : dividend / divisor;
+
         }
 
         public int LastMinusFirst(int[] nums)
         {
-            throw new NotImplementedException();
+            return nums[nums.Length - 1] - nums[0];
         }
 
         public int[] GetOddsBelow100()
         {
-            /*  var start = new int[1];*/
+            int[] newArray = new int[50];
+            int list = 0;
 
-            /*  for (var i = 0; i <= 100; i++)
-              {
-                  start[i] = i;
-                  i++;
-                  return start;
-              }*/
-            throw new NotImplementedException();
+            for (int i = 0; i < 100; i++)
+            {
+                if (i % 2 !=0)
+                {
+                    newArray[list] = i;
+                    list++;
+                }
+      
+            }
+            return newArray;
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
