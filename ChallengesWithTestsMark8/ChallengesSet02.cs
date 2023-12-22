@@ -83,6 +83,7 @@ namespace ChallengesWithTestsMark8
             if (numbers == null) return 0;
 
             var evensTotal = 0;
+
             foreach (var item in numbers) { 
                 if (item % 2 == 0)
                 {

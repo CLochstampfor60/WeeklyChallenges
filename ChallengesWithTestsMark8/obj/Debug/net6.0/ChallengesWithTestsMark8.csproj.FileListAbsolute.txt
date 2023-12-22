@@ -12,3 +12,4 @@ C:\Users\CJ\Desktop\code-class\true-coders\repos-tc\WeeklyChallenges\ChallengesW
 C:\Users\CJ\Desktop\code-class\true-coders\repos-tc\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.pdb
 C:\Users\CJ\Desktop\code-class\true-coders\repos-tc\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.genruntimeconfig.cache
 C:\Users\CJ\Desktop\code-class\true-coders\repos-tc\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ref\ChallengesWithTestsMark8.dll
+C:\Users\CJ\Desktop\code-class\true-coders\repos-tc\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.sourcelink.json
