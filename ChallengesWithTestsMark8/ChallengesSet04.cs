@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
+
+/*using System;
+using System.Linq;*/
 
 namespace ChallengesWithTestsMark8
 {
@@ -46,14 +50,14 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            /*  return biz[String.IndexOf(biz, 0)] = "TrueCoders";*/
-
-            return Business.Remove();
+            biz.Name = "TrueCoders";
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            throw new NotImplementedException();
+            return sideLength1 + sideLength2 > sideLength3 &&
+                sideLength1 + sideLength3 > sideLength2 &&
+                sideLength2 + sideLength3 > sideLength1;
         }
 
         public bool IsStringANumber(string input)
@@ -63,12 +67,23 @@ namespace ChallengesWithTestsMark8
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            return objs.Where(x => x == null).Add().Then();
+            /*return objs.Where(x => x == null).Count();*/
+
+            /*var nullTotal = objs.Where(x => x? ?? 0).ToList();*/
+            throw new NotImplementedException();
         }
 
         public double AverageEvens(int[] numbers)
         {
-            return numbers.Where(x => x % 2 == 0).Sum();
+            if (numbers == null) return 0;
+            var evensSum = numbers.Where(x => x % 2 == 0);
+            if (evensSum.Count() == 0 || evensSum == null || !evensSum.Any())
+            {
+                return 0;
+            }
+
+            return evensSum.Average();
+
         }
 
         public int Factorial(int number)
