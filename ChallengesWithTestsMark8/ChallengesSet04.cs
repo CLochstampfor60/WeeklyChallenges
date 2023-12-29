@@ -62,15 +62,20 @@ namespace ChallengesWithTestsMark8
 
         public bool IsStringANumber(string input)
         {
-            throw new NotImplementedException();
+            var isNumber = double.TryParse(input, out var number);
+            return isNumber;
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            /*return objs.Where(x => x == null).Count();*/
-
-            /*var nullTotal = objs.Where(x => x? ?? 0).ToList();*/
-            throw new NotImplementedException();
+            var nullTotal = objs.Where(x => x == null).Count();
+            if (nullTotal > objs.Length / 2)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
 
         public double AverageEvens(int[] numbers)
