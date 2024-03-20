@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M5PTfVG35/v6BFyP0aUkrvkuAxZrZcJmh2meRMl5aTcAexiMc9vi2FOZ31dRQRNktfuOOJqI6GgshmCnXD5YWw==",
+  "dgSpecHash": "sVCa7VjHJjgsr6osNRTQ+muytUSvMawY7oqpnS3BpqsHA0dg4k7QBjTgoNKKbbCRvgk1XlWItgEH9ztB9HdiXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\CJ\\Desktop\\code-class\\true-coders\\repos-tc\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\ChallengesWithTestsMark8.Tests.csproj",
   "expectedPackageFiles": [
@@ -103,7 +103,10 @@
     "C:\\Users\\CJ\\.nuget\\packages\\xunit.core\\2.4.0\\xunit.core.2.4.0.nupkg.sha512",
     "C:\\Users\\CJ\\.nuget\\packages\\xunit.extensibility.core\\2.4.0\\xunit.extensibility.core.2.4.0.nupkg.sha512",
     "C:\\Users\\CJ\\.nuget\\packages\\xunit.extensibility.execution\\2.4.0\\xunit.extensibility.execution.2.4.0.nupkg.sha512",
-    "C:\\Users\\CJ\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    "C:\\Users\\CJ\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512",
+    "C:\\Users\\CJ\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\CJ\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\CJ\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
